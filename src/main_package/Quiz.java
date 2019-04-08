@@ -14,12 +14,11 @@ public class Quiz {
 	}
 	
 	// record player's choice for one quiz question
-	public void setChosenAnser() {
-		
+	public void setChosenAnser(String chosenAnswer) {
+		this.chosenAnswer = chosenAnswer;
 	}
-	
 	//check if the chosenAnswer matchs the correct answer
-	public void checkAnswer() {
-		
+	public boolean checkAnswer() {
+		return answer.equals(chosenAnswer);
 	}
 }
