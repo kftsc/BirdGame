@@ -17,7 +17,7 @@ public class Bird extends Element implements Move{
 	}
 	
 	// subtract one from the int life.
-	public void collisiion() {
+	public void collision() {
 		
 	}
 }
