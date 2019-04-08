@@ -1,6 +1,9 @@
-
+// author:¡¡Sicheng Tian
 public class CollectedItem extends Element{
+	//represents which kind of item it is
 	ItemType it;
+	
+	//represents whether the item is collected or not, every item is initialized with a false value
 	boolean collected;
 	
 	public CollectedItem(Direction d, int x, int y, ItemType i) {
