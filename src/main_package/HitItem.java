@@ -1,9 +1,11 @@
+package main_package;
+
 // author Sicheng Tian
 public class HitItem extends Element{
 	//represents which kind of item it is
 	ItemType it;
 	
-	public HitItem( int x, int y, ItemType i) {
+	public HitItem(int x, int y, ItemType i) {
 		super(x,y);
 		it = i;
 	}

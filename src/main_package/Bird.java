@@ -1,13 +1,14 @@
+package main_package;
 
 //author: Sicheng Tian
-public class Bird extends Element implements Move{
+public class Bird extends Element{
 	// represent how many lifes left
 	int life;
 	// represent the type of bird
 	BirdType bt;
 	
-	public Bird (Direction d, int x, int y, int l, BirdType b) {
-		super(d,x,y);
+	public Bird (int x, int y, int l, BirdType b) {
+		super(x,y);
 		life = l;
 		bt = b;
 	}

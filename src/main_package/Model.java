@@ -1,3 +1,4 @@
+package main_package;
 import java.util.Collection;
 import java.util.Timer;
 // author Sicheng Tian
@@ -6,11 +7,13 @@ public class Model {
 	Collection<Element> list;
 	Bird bird;
 	boolean quizing;
-	Type curGame;
+	Type curState;
+	int eggs;
 	
 	// initialize the timer and all the element in the Collection and bird
 	// initializing the quizing to be false
-	// set curGame to be the main menu
+	// set curState to be the main menu
+	// initialize the egg 
 	public Model() {
 		
 	}
@@ -24,6 +27,7 @@ public class Model {
 	public void updatePosition() {
 		
 	}
+	
 	// update the bird position by calling the move method
 	// and call checkCollision()
 	public void updateBirdPosition(int incX, int incY) {
@@ -43,6 +47,7 @@ public class Model {
 		
 	}
 	
+	// for OP Game
 	// check the answer of the quiz
 	// if it is true, set the quizing boolean to be false;
 	// if it is false, call the collision method in the bird and then set the quizing boolean to be false;
@@ -51,14 +56,41 @@ public class Model {
 	}
 	
 	// check the remaining life in the bird
-	// if it is zero, set curGame to be End
+	// if it is zero, set curState to be End
 	// otherwise do nothing
 	public void gameOver() {
 	
 	}
 	
-	// if reach the final flag, set curGame to be Win 
+	// if reach the final flag, set curState to be Win 
 	public void winGame() {
 	
+	}
+	
+	// for NH game
+	// check if current bird position has collision with CollectedItem in the Element list
+	// if the item has collision call isCollected() method in Collected
+	// if all the CollectedItem is collected, set the quizing boolean to be true
+	public void collisionNH1() {
+		
+	}
+	
+	// for NH game
+	// check the number of right answer in the quiz
+	// set the number of egg to be the number of right answers
+	// set the quizing boolean to be false
+	// set curState to be NH2
+	public void submitQuiz() {
+		
+	}
+	
+	// for NH game
+	// 
+	public void collisionNH2() {
+		
+	}
+	
+	public Type getCurState() {
+		return curState;
 	}
 }

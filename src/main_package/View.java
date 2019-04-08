@@ -1,3 +1,4 @@
+package main_package;
 import java.awt.Button;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
