@@ -6,11 +6,11 @@ public class Model {
 	Collection<Element> list;
 	Bird bird;
 	boolean quizing;
-	Type curGame;
+	Type curState;
 	
 	// initialize the timer and all the element in the Collection and bird
 	// initializing the quizing to be false
-	// set curGame to be the main menu
+	// set curState to be the main menu
 	public Model() {
 		
 	}
@@ -24,9 +24,10 @@ public class Model {
 	public void updatePosition() {
 		
 	}
+	
 	// update the bird position by calling the move method
 	// and call checkCollision()
-	public void updateBirdPosition(int incX, int incY) {
+	public void updateBirdPosition() {
 		
 	}
 	
@@ -51,13 +52,13 @@ public class Model {
 	}
 	
 	// check the remaining life in the bird
-	// if it is zero, set curGame to be End
+	// if it is zero, set curState to be End
 	// otherwise do nothing
 	public void gameOver() {
 	
 	}
 	
-	// if reach the final flag, set curGame to be Win 
+	// if reach the final flag, set curState to be Win 
 	public void winGame() {
 	
 	}

@@ -27,7 +27,7 @@ public class Controller {
 		
 	}
 	
-	// if the NH button is clicked, set the curGame in the model to be NHGame
+	// if the NH button is clicked, set the curState in the model to be NH
 	class NHButtonListener implements ActionListener {
 
 		@Override
@@ -38,7 +38,7 @@ public class Controller {
 		
 	}
 	
-	// if the OP button is clicked, set the curGame in the model to be OPGame
+	// if the OP button is clicked, set the curState in the model to be OP
 	class OPButtonListener implements ActionListener{
 
 		@Override
@@ -91,12 +91,12 @@ public class Controller {
 	// use EventQueue to create a timer and call start() by the timer
 	// initialize the drawAction to be a AbstractAction and implements the actionPerforemed method
 	// in the implemented method, check
-	// if the curGame in model is MainMenu, call update(model) by view
+	// if the curState in model is MainMenu, call update(model) by view
 	// if the quizing boolean in model is true, call update(model) by view
-	// if the curGame in model is NHGame, call updateTimer() by model
-	// if the curGame in model is OPGame, call updatePosition() by model and update(model) by view and updateTimer() by model
-	// if the CurGame in model is End, call update(model) by view
-	// if the curGame in model is Win, call update(model) by view
+	// if the curState in model is NH, call updateTimer() by model
+	// if the curState in model is OP, call updatePosition() by model and update(model) by view and updateTimer() by model
+	// if the CurState in model is End, call update(model) by view
+	// if the curState in model is Win, call update(model) by view
 	public void start() {
 		
 	}

@@ -1,6 +1,6 @@
 
 //author: Sicheng Tian
-public class Bird extends Element implements Move{
+public class Bird extends Element{
 	// represent how many lifes left
 	int life;
 	// represent the type of bird
