@@ -5,8 +5,12 @@ import org.junit.jupiter.api.Test;
 class CollectedItemTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	// test for if Collected method is being used
+	void testCollected() {
+		CollectedItem c = new CollectedItem(d,0,0,i);
+		c.isCollected();
+		
+		assertEquals(true, c.collected);
 	}
 
 }
