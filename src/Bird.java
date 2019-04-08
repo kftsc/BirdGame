@@ -1,4 +1,5 @@
 
+//author: Sicheng Tian
 public class Bird extends Element implements Move{
 	// represent how many lifes left
 	int life;
@@ -13,11 +14,11 @@ public class Bird extends Element implements Move{
 	
 	// move the bird, change x and y by adding incX and incY on x and y
 	public void move(int incX, int incY) {
-		
+	
 	}
 	
 	// subtract one from the int life.
-	public void collisiion() {
+	public void collision() {
 		
 	}
 	
