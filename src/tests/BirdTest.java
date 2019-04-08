@@ -10,9 +10,14 @@ import main_package.BirdType;
 class BirdTest {
 		Bird osprey1 = new Bird(0,0,3,BirdType.NH);
 	@Test
-	void testMove() {
+	void testMove1() {
 		osprey1.move(1,1);
 		assertEquals(1,osprey1.getX());
+	}
+	
+	@Test
+	void testMove2() {
+		osprey1.move(1,1);
 		assertEquals(1,osprey1.getY());
 	}
 	
