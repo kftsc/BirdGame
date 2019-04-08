@@ -1,9 +1,9 @@
 
-public class HitItem extends Element implements Move{
+public class HitItem extends Element{
 	ItemType it;
 	
-	public HitItem(Direction d, int x, int y, ItemType i) {
-		super(d,x,y);
+	public HitItem( int x, int y, ItemType i) {
+		super(x,y);
 		it = i;
 	}
 	

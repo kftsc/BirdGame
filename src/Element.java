@@ -7,8 +7,7 @@ public class Element {
 	// y-axis location
 	int y;
 
-	public Element(Direction d, int x, int y) {
-		direction = d;
+	public Element(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
