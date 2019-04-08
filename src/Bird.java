@@ -6,8 +6,8 @@ public class Bird extends Element{
 	// represent the type of bird
 	BirdType bt;
 	
-	public Bird (Direction d, int x, int y, int l, BirdType b) {
-		super(d,x,y);
+	public Bird (int x, int y, int l, BirdType b) {
+		super(x,y);
 		life = l;
 		bt = b;
 	}
@@ -17,7 +17,7 @@ public class Bird extends Element{
 	
 	}
 	
-	/// losing life after collision with planes, fox, but getting one more life after collision with the fish
+	/// losing life after collision with planes, fox
 	public void collision() {
 		
 	}

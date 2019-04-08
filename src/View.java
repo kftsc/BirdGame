@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+// author Sicheng Tian
 public class View extends JPanel{
 	BufferedImage[] imgs;
 	int frameHeight;

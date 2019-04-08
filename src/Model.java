@@ -1,6 +1,6 @@
 import java.util.Collection;
 import java.util.Timer;
-
+// author Sicheng Tian
 public class Model {
 	Timer myTimer;
 	Collection<Element> list;
