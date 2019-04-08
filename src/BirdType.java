@@ -5,7 +5,7 @@ public enum BirdType {
 	
 	private String name = null;
 	
-	private BIRDTYPE(String s){
+	private BirdType(String s){
 		name = s;
 	}
 	public String getName() {

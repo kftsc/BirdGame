@@ -9,7 +9,7 @@ public enum ItemType {
 	
 	private String name = null;
 	
-	private BIRDTYPE(String s){
+	private ItemType(String s){
 		name = s;
 	}
 	public String getName() {
