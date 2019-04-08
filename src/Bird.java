@@ -21,7 +21,7 @@ public class Bird extends Element implements Move{
 		
 	}
 	
-	// 
+	// add one to the life
 	public void eat() {
 		
 	}
