@@ -20,4 +20,9 @@ public class Bird extends Element implements Move{
 	public void collisiion() {
 		
 	}
+	
+	// 
+	public void eat() {
+		
+	}
 }
