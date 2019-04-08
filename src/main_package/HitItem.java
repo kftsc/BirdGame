@@ -10,6 +10,17 @@ public class HitItem extends Element{
 		it = i;
 	}
 	
+	// getter for x
+	public int getX() {
+		return this.x;
+	}
+	
+	//getter for y
+	public int getY() {
+		return this.y;
+	}
+	
+	
 	// move the item, change x and y by adding or subtracting incX and incY on x and y.
 	public void move(int incX, int incY) {
 		
