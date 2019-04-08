@@ -19,11 +19,6 @@ public class Model {
 		
 	}
 	
-	// update the timer while the game is running
-	public void updateTimer() {
-		
-	}
-	
 	// for NH2 game
 	// if the time is run out call winGame()
 	public void checkTimer() {

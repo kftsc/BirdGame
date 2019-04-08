@@ -2,6 +2,8 @@ package tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import javax.management.timer.Timer;
+
 import org.junit.jupiter.api.Test;
 
 import main_package.*;
@@ -21,4 +23,5 @@ class ModelTest {
 		m.gameOver();
 		assertEquals(m.getCurState(), Type.GAMEOVER);
 	}
+	
 }
