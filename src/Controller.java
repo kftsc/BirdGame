@@ -27,7 +27,7 @@ public class Controller {
 		
 	}
 	
-	// if the NH button is clicked, set the curState in the model to be NH
+	// if the NH button is clicked, set the curState in the model to be NH1
 	class NHButtonListener implements ActionListener {
 
 		@Override
@@ -93,7 +93,8 @@ public class Controller {
 	// in the implemented method, check
 	// if the curState in model is MainMenu, call update(model) by view
 	// if the quizing boolean in model is true, call update(model) by view
-	// if the curState in model is NH, call updateTimer() by model
+	// if the curState in model is NH, call updateTimer() and updateBirdPositionNH by model, update by view
+	// if the curState in model is NH2, call updateTimer() and updateBirdPositionNH by model, updare by view
 	// if the curState in model is OP, call updatePosition() by model and update(model) by view and updateTimer() by model
 	// if the CurState in model is End, call update(model) by view
 	// if the curState in model is Win, call update(model) by view

@@ -1,6 +1,7 @@
 
 public enum Type {
-	NH("NGgame"),
+	NH1("NHGgame"),
+	NH2("NHGame"),
 	OP("OPgame"),
 	MAINMENU("MainMenu"),
 	GAMEOVER("GameOver"),
