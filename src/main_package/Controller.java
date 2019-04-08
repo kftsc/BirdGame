@@ -51,7 +51,9 @@ public class Controller {
 	}
 	
 	
-	// if the submit quiz button is clicked, call the method chechQuiz() in the model
+	// if the submit quiz button is clicked, 
+	// if the curState is OP, call the method chechQuiz() in the model
+	// if the curState is NH1, call the method submitQuiz() in model
 	class QuizButtonListener implements ActionListener {
 
 		@Override
@@ -94,9 +96,9 @@ public class Controller {
 	// in the implemented method, check
 	// if the curState in model is MainMenu, call update(model) by view
 	// if the quizing boolean in model is true, call update(model) by view
-	// if the curState in model is NH, call updateTimer() and updateBirdPositionNH by model, update by view
-	// if the curState in model is NH2, call updateTimer() and updateBirdPositionNH by model, updare by view
-	// if the curState in model is OP, call updatePosition() by model and update(model) by view and updateTimer() by model
+	// if the curState in model is NH, call update by view
+	// if the curState in model is NH2, call updateTimer(), checkTimer() and updatePosition by model, update by view
+	// if the curState in model is OP, call updatePosition() by model and update(model) by view
 	// if the CurState in model is End, call update(model) by view
 	// if the curState in model is Win, call update(model) by view
 	public void start() {
