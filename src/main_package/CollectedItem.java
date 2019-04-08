@@ -1,3 +1,4 @@
+package main_package;
 // author:¡¡Sicheng Tian, Yixiong Wu
 public class CollectedItem extends Element{
 	//represents which kind of item it is

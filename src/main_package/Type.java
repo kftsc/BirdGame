@@ -1,3 +1,4 @@
+package main_package;
 
 public enum Type {
 	NH1("NHGgame"),

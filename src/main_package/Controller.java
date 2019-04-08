@@ -1,3 +1,4 @@
+package main_package;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -99,6 +100,10 @@ public class Controller {
 	// if the CurState in model is End, call update(model) by view
 	// if the curState in model is Win, call update(model) by view
 	public void start() {
+		
+	}
+	
+	public static void main(String[] args) {
 		
 	}
 }

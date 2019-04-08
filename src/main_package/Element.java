@@ -1,3 +1,4 @@
+package main_package;
 // author Sicheng Tian, Yixiong Wu
 public class Element {
 	// everything exists in the game besides the background is an element

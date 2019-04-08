@@ -1,3 +1,4 @@
+package main_package;
 // author Yixiong Wu
 public class Quiz {
 	// The question for one quiz

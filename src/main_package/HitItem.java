@@ -1,3 +1,4 @@
+package main_package;
 
 // author Sicheng Tian
 public class HitItem extends Element{

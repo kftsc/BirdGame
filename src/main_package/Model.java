@@ -1,3 +1,4 @@
+package main_package;
 import java.util.Collection;
 import java.util.Timer;
 // author Sicheng Tian
@@ -87,5 +88,9 @@ public class Model {
 	// 
 	public void collisionNH2() {
 		
+	}
+	
+	public Type getCurState() {
+		return curState;
 	}
 }
