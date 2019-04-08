@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import main_package.*;
 
 class ModelTest {
-
+	
 	@Test
 	void testWinGame() {
 		Model m = new Model();
@@ -15,4 +15,10 @@ class ModelTest {
 		assertEquals(m.getCurState(), Type.WIN);
 	}
 
+	@Test
+	void testGameOver() {
+		Model m = new Model();
+		m.gameOver();
+		assertEquals(m.getCurState(), Type.GAMEOVER);
+	}
 }
