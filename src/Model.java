@@ -30,8 +30,9 @@ public class Model {
 		
 	}
 	
-	// check if the bird position has collision with other hitItem
+	// check if the bird position has collision with other hitItem except fish
 	// if it is call the startQize method
+	// if has collision with fish call eat() in the bird
 	public void checkCollision() {
 		
 	}
