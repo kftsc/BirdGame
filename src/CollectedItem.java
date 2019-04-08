@@ -12,7 +12,7 @@ public class CollectedItem extends Element{
 		collected = false;
 	}
 	
-	// call when the item is collected, change collected boolean to true
+	// call when the item is collected, change boolean collected  to true
 	public void isCollected() {
 		
 	}
