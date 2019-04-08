@@ -17,4 +17,8 @@ public class CollectedItem extends Element{
 	public void isCollected() {
 		
 	}
+	
+	public boolean getCollected() {
+		return collected;
+	}
 }
