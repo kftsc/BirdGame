@@ -1,6 +1,5 @@
 package main_package;
 import java.util.ArrayList;
-import java.util.Collection;
 import javax.management.timer.Timer;
 // author Sicheng Tian
 public class Model {
@@ -105,6 +104,7 @@ public class Model {
 		
 	}
 	
+	// getter setter for create test
 	public Type getCurState() {
 		return curState;
 	}
@@ -140,4 +140,8 @@ public class Model {
 	public ArrayList<Element> getList(){
 		return list;
 	}
+	public void setEgg(int e) {
+		eggs = e;
+	}
+	
 }

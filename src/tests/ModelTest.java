@@ -114,6 +114,23 @@ class ModelTest {
 		m.collisionNH1();
 		assertEquals(true, m.getQuizing());
 	}
+	
+	@Test
+	void testCollisionNH2() {
+		Model m = new Model();
+		m.setBird(50, 50, -1, BirdType.NH);
+		HitItem fox = new HitItem(80,80,ItemType.FOX);
+		CollectedItem egg = new CollectedItem(80,80,ItemType.EGG);
+		ArrayList<Element> list = new ArrayList<>();
+		list.add(egg);
+		m.setList(list);
+		m.setEgg(1);
+		m.collisionNH2(fox);
+		assertEquals(0, m.getEggs());
+		assertEquals(Type.GAMEOVER, m.getCurState());
+		
+		
+	}
 
 
 }
