@@ -1,7 +1,7 @@
 package main_package;
 import java.util.ArrayList;
 import javax.management.timer.Timer;
-// author Sicheng Tian, Yufan Wang
+// author Sicheng Tian, Yufan Wang£¬ Rubai Bian
 public class Model {
 	Timer myTimer;
 	ArrayList<Element> list;
