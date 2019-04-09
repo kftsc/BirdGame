@@ -32,7 +32,7 @@ public class Model {
 	
 	// loop through the collection list update their position by calling the move method
 	// if the curState is NH2 call collisionNH2()
-	// if the curState is OP call checkCollision()
+	// if the curState is OP call checkCollision
 	public void updatePosition() {
 		
 	}
@@ -50,7 +50,7 @@ public class Model {
 	// remove the hitItem that has collision from the Element list
 	// check if the bird has collision with the final flag
 	// if it is call winGame()
-	public void checkCollision() {
+	public void checkCollision(HitItem ht) {
 		
 	}
 	
@@ -101,7 +101,7 @@ public class Model {
 	// if it is remove the egg item and the hitItem from list, subtract one from int eggs
 	// if the fox has collision with bird, call the move method of the fox
 	// check the number of eggs left. if it is zero, call gameOver()
-	public void collisionNH2() {
+	public void collisionNH2(HitItem ht) {
 		
 	}
 	

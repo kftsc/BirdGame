@@ -71,6 +71,41 @@ class ModelTest {
 		m.startQuiz();
 		assertEquals(true, m.getQuizing());
 	}
+	
+	@Test
+	void testCheckCollision() {
+		Model m = new Model();
+		m.setBird(50, 50, 2, BirdType.OSPREY);
+		m.checkCollision(new HitItem(50,50,ItemType.AIRPLANE));
+		assertEquals(true, m.getQuizing());
+		
+		m.checkCollision(new HitItem(50,50,ItemType.FISH));
+		assertEquals(3, m.getBird().getLife());
+		
+		m.checkCollision(new HitItem(50,50,ItemType.WINFLAG));
+		assertEquals(Type.WIN, m.getCurState());
+		
+	}
+	
+	@Test
+	void testCollisionNH1() {
+		Model m = new Model();
+		m.setBird(50, 50, -1, BirdType.NH);
+		ArrayList<Element> list = new ArrayList<>();
+		CollectedItem item = new CollectedItem(50,50,ItemType.STICK);
+		CollectedItem item2 = new CollectedItem(10,10,ItemType.STICK);
+		list.add(item);
+		list.add(item2);
+		m.setList(list);
+		m.collisionNH1();
+		assertEquals(true, item.getCollected());
+		
+		ArrayList<Element> list2 = new ArrayList<>();
+		list2.add(item);
+		m.setList(list2);
+		m.collisionNH1();
+		assertEquals(true, m.getQuizing());
+	}
 
 
 }

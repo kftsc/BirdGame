@@ -6,6 +6,7 @@ public enum ItemType {
     FISH("fish"),
     RAT("rat"),
     STICK("stick"),
+    WINFLAG("win flag"),
     EGG("egg");
 	
 	private String name = null;
