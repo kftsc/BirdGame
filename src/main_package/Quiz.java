@@ -1,5 +1,5 @@
 package main_package;
-// author Yixiong Wu
+// author Yixiong Wu, Yufan Wang
 public class Quiz {
 	// The question for one quiz
 	String question;

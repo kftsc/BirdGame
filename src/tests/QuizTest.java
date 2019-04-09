@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import main_package.Quiz;
-
+// @author Yufan Wang
 class QuizTest {
 
 	
