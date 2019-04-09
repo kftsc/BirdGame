@@ -14,7 +14,7 @@ class ModelTest {
 	void testWinGame() {
 		Model m = new Model();
 		m.winGame();
-		assertEquals(m.getCurState(), Type.WIN);
+		assertEquals(m.getCurState()pe.WIN);
 	}
 
 	@Test
@@ -54,6 +54,13 @@ class ModelTest {
 		m.checkQuiz();
 		assertEquals(false,m.getQuizing());
 		assertEquals(2, m.getBird().getLife());
+	}
+	
+	@Test
+	void testStartQuiz() {
+		Model m = new Model();
+		m.startQuiz();
+		assertEquals(true, m.getQuizing());
 	}
 
 
