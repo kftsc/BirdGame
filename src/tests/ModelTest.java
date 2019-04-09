@@ -2,6 +2,8 @@ package tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import javax.management.timer.Timer;
 
 import org.junit.jupiter.api.Test;
@@ -14,7 +16,7 @@ class ModelTest {
 	void testWinGame() {
 		Model m = new Model();
 		m.winGame();
-		assertEquals(m.getCurState()pe.WIN);
+		assertEquals(m.getCurState(), Type.WIN);
 	}
 
 	@Test
@@ -61,6 +63,21 @@ class ModelTest {
 		Model m = new Model();
 		m.startQuiz();
 		assertEquals(true, m.getQuizing());
+	}
+	
+	@Test
+	void testCheckCollision() {
+		Model m = new Model();
+		m.setBird(50, 50, 2, BirdType.OSPREY);
+		m.checkCollision(new HitItem(50,50,ItemType.AIRPLANE));
+		assertEquals(true, m.getQuizing());
+		
+		m.checkCollision(new HitItem(50,50,ItemType.FISH));
+		assertEquals(3, m.getBird().getLife());
+		
+		m.checkCollision(new HitItem(50,50,ItemType.WINFLAG));
+		assertEquals(Type.WIN, m.getCurState());
+		
 	}
 
 

@@ -29,7 +29,7 @@ public class Model {
 	
 	// loop through the collection list update their position by calling the move method
 	// if the curState is NH2 call collisionNH2()
-	// if the curState is OP call checkCollision()
+	// if the curState is OP call checkCollision
 	public void updatePosition() {
 		
 	}
@@ -47,7 +47,7 @@ public class Model {
 	// remove the hitItem that has collision from the Element list
 	// check if the bird has collision with the final flag
 	// if it is call winGame()
-	public void checkCollision() {
+	public void checkCollision(HitItem ht) {
 		
 	}
 	
