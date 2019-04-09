@@ -31,6 +31,20 @@ class ModelTest {
 	}
 	
 	@Test
+	void testForGameOver() {
+		Model m = new Model();
+		m.gameOver();
+		assertEquals(Type.GAMEOVER,m.getCurState());
+	}
+	
+	void testForWinGame() {
+		Model m = new Model();
+		m.winGame();
+		assertEquals(Type.WIN,m.getCurState());
+	}
+	
+	
+	@Test
 	void testSubmitQuizofNH() {
 		Model m = new Model();
 		m.submitQuiz();
@@ -43,7 +57,6 @@ class ModelTest {
 		// set the number of egg to be the number of right answers
 		// set the quizing boolean to be false
 		// set curState to be NH2
-		
 		
 	}
 
