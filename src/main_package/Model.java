@@ -102,6 +102,7 @@ public class Model {
 		
 	}
 	
+	// getter setter for create test
 	public Type getCurState() {
 		return curState;
 	}
