@@ -40,6 +40,21 @@ class ModelTest {
 		assertEquals(BirdType.NH,m.getCurState());
 		
 	}
+	
+	@Test
+	void testCheckQuiz() {
+		Model m = new Model();
+		m.setQuiz("1111?", "yes");
+		m.getQuiz().setChosenAnser("yes");
+		m.checkQuiz();
+		assertEquals(false, m.getQuizing());
+		
+		m.setBird(0, 0, 3, BirdType.NH);
+		m.getQuiz().setChosenAnser("no");
+		m.checkQuiz();
+		assertEquals(false,m.getQuizing());
+		assertEquals(2, m.getBird().getLife());
+	}
 
 
 }

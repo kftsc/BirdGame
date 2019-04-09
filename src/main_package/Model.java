@@ -110,5 +110,20 @@ public class Model {
 		this.list = list;
 	}
 	
+	public void setQuiz(String question, String answer) {
+		quiz = new Quiz(question, answer);
+	}
+	
+	public Quiz getQuiz() {
+		return quiz;
+	}
+	
+	public void setBird(int x, int y, int l, BirdType bt) {
+		bird = new Bird(x,y,l,bt);
+	}
+	
+	public Bird getBird() {
+		return bird;
+	}
 	
 }
