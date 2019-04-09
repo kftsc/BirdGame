@@ -126,4 +126,8 @@ public class Model {
 		return bird;
 	}
 	
+	public void setEgg(int e) {
+		eggs = e;
+	}
+	
 }
