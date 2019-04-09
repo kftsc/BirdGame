@@ -71,7 +71,7 @@ public class Model {
 	// for NH game
 	// check if current bird position has collision with CollectedItem in the Element list
 	// if the item has collision call isCollected() method in Collected
-	// if all the CollectedItem is collected, call the startQuiz() method and set the quizing boolean to be true
+	// if all the CollectedItem is collected, call the startQuiz() method
 	public void collisionNH1() {
 		
 	}
@@ -97,7 +97,10 @@ public class Model {
 	public Type getCurState() {
 		return curState;
 	}
+	
 	public void setList(Collection<Element> list){
 		this.list = list;
 	}
+	
+	
 }

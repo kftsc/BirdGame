@@ -17,7 +17,7 @@ public class Controller {
 		
 	}
 	
-	// if the restart button is clicked, set the curGame in model to be MainMenu
+	// if the restart button is clicked, set the curState in model to be MainMenu
 	class RestartButtonListener implements ActionListener {
 
 		@Override
