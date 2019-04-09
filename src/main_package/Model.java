@@ -98,7 +98,7 @@ public class Model {
 	// if it is remove the egg item and the hitItem from list, subtract one from int eggs
 	// if the fox has collision with bird, call the move method of the fox
 	// check the number of eggs left. if it is zero, call gameOver()
-	public void collisionNH2() {
+	public void collisionNH2(HitItem ht) {
 		
 	}
 	
