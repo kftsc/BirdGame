@@ -23,6 +23,11 @@ class ModelTest {
 		m.gameOver();
 		assertEquals(m.getCurState(), Type.GAMEOVER);
 	}
-	
+
+	@Test
+	void testUpdatePosition() {
+		Model m = new Model();
+		m.setList(new);
+	}
 
 }

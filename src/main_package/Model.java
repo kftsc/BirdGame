@@ -97,4 +97,7 @@ public class Model {
 	public Type getCurState() {
 		return curState;
 	}
+	public void setList(Collection<Element> list){
+		this.list = list;
+	}
 }
