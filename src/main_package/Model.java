@@ -1,6 +1,6 @@
 package main_package;
 import java.util.Collection;
-import java.util.Timer;
+import javax.management.timer.Timer;
 // author Sicheng Tian
 public class Model {
 	Timer myTimer;
@@ -16,12 +16,6 @@ public class Model {
 	// set curState to be the main menu
 	// initialize the egg 
 	public Model() {
-		
-	}
-	
-	// for NH2 game
-	// if the time is run out call winGame()
-	public void checkTimer() {
 		
 	}
 	

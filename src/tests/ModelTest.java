@@ -24,4 +24,5 @@ class ModelTest {
 		assertEquals(m.getCurState(), Type.GAMEOVER);
 	}
 	
+
 }
