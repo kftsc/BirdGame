@@ -125,6 +125,10 @@ public class Model {
 		bird = new Bird(x,y,l,bt);
 	}
 	
+	public void setBird(Bird b) {
+		this.bird = b;
+	}
+	
 	public Bird getBird() {
 		return bird;
 	}

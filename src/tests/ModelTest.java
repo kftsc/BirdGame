@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
-import javax.management.timer.Timer;
-
 import org.junit.jupiter.api.Test;
 
 import main_package.*;
@@ -31,12 +29,22 @@ class ModelTest {
 		Model m = new Model();
 		m.setCurState(Type.OP);
 		ArrayList<Element> e = new ArrayList<Element>();
-		Bird b = new Bird(0,0,3,BirdType.OSPREY);
-		e.add(b);
+		Element e1 = new HitItem(50, 50, ItemType.FISH);
+		e.add(e1);
 		m.setList(e);
-		b.move(Model.xIncr, Model.yIncr);
 		m.updatePosition();
-		assertEquals(b, m.getList().get(0));
+		assertEquals(50 - Math.abs(Model.xIncr), m.getList().get(0).getX());
+		assertEquals(50, m.getList().get(0).getY());
+	}
+	
+	@Test
+	void testUpdateBirdPositionOP() {
+		Model m = new Model();
+		m.setCurState(Type.OP);
+		m.setBird(0,0,3,BirdType.OSPREY);
+		m.updateBirdPosition(Model.xIncr, Model.yIncr);
+		assertEquals(Model.xIncr, m.getBird().getX());
+		assertEquals(Model.yIncr, m.getBird().getY());
 	}
 	
 	@Test
