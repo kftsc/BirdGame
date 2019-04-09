@@ -2,6 +2,8 @@ package tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import javax.management.timer.Timer;
 
 import org.junit.jupiter.api.Test;
@@ -14,7 +16,7 @@ class ModelTest {
 	void testWinGame() {
 		Model m = new Model();
 		m.winGame();
-		assertEquals(m.getCurState()pe.WIN);
+		assertEquals(m.getCurState(), Type.WIN);
 	}
 
 	@Test
@@ -25,9 +27,16 @@ class ModelTest {
 	}
 
 	@Test
-	void testUpdatePosition() {
+	void testUpdatePositionOP() {
 		Model m = new Model();
-		m.setList(new);
+		m.setCurState(Type.OP);
+		ArrayList<Element> e = new ArrayList<Element>();
+		Bird b = new Bird(0,0,3,BirdType.OSPREY);
+		e.add(b);
+		m.setList(e);
+		b.move(Model.xIncr, Model.yIncr);
+		m.updatePosition();
+		assertEquals(b, m.getList().get(0));
 	}
 	
 	@Test

@@ -1,16 +1,19 @@
 package main_package;
+import java.util.ArrayList;
 import java.util.Collection;
 import javax.management.timer.Timer;
 // author Sicheng Tian
 public class Model {
 	Timer myTimer;
-	Collection<Element> list;
+	ArrayList<Element> list;
 	Bird bird;
 	boolean quizing;
 	Type curState;
 	Quiz quiz;
 	int eggs;
 	int numTrueAns;
+	public static int xIncr = 5;
+	public static int yIncr = 5;
 	
 	// initialize the timer and all the element in the Collection and bird
 	// initializing the quizing to be false
@@ -106,7 +109,7 @@ public class Model {
 		return curState;
 	}
 	
-	public void setList(Collection<Element> list){
+	public void setList(ArrayList<Element> list){
 		this.list = list;
 	}
 	
@@ -126,4 +129,11 @@ public class Model {
 		return bird;
 	}
 	
+	public void setCurState(Type curState) {
+		this.curState = curState;
+	}
+	
+	public ArrayList<Element> getList(){
+		return list;
+	}
 }
