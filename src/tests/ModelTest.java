@@ -29,5 +29,22 @@ class ModelTest {
 		Model m = new Model();
 		m.setList(new);
 	}
+	
+	@Test
+	void testSubmitQuizofNH() {
+		Model m = new Model();
+		m.submitQuiz();
+		
+		assertEquals(m.getEggs(),m.getNumAns()); // for eggs
+		assertFalse(m.getQuizing());
+		assertEquals(BirdType.NH,m.getCurState());
+		// for NH game
+		// check the number of right answer in the quiz
+		// set the number of egg to be the number of right answers
+		// set the quizing boolean to be false
+		// set curState to be NH2
+		
+		
+	}
 
 }
