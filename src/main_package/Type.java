@@ -1,5 +1,5 @@
 package main_package;
-
+//author Sicheng Tian
 public enum Type {
 	NH1("NHGgame"),
 	NH2("NHGame"),

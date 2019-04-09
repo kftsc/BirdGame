@@ -15,7 +15,7 @@ public class View extends JPanel{
 	ArrayList<Button> list;
 	
 	// initialize the frameHeight, frameWidth
-	// initialize imgs by calling createImage method
+	// initialize images by calling createImage method
 	// initialize the frame and button
 	// add button to the JPanel
 	public View() {
