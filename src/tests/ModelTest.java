@@ -30,6 +30,16 @@ class ModelTest {
 		m.setList(new);
 	}
 	
-	
+	@Test
+	void testSubmitQuizofNH() {
+		Model m = new Model();
+		m.submitQuiz();
+		
+		assertEquals(m.getEggs(),m.getNumAns()); // for eggs
+		assertFalse(m.getQuizing());
+		assertEquals(BirdType.NH,m.getCurState());
+		
+	}
+
 
 }

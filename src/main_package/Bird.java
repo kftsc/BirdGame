@@ -2,7 +2,7 @@ package main_package;
 
 //author: Sicheng Tian
 public class Bird extends Element{
-	// represent how many lifes left
+	// represent how many lives left
 	int life;
 	// represent the type of bird
 	BirdType bt;

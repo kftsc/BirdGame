@@ -10,6 +10,7 @@ public class Model {
 	Type curState;
 	Quiz quiz;
 	int eggs;
+	int numTrueAns;
 	
 	// initialize the timer and all the element in the Collection and bird
 	// initializing the quizing to be false
@@ -18,6 +19,13 @@ public class Model {
 	public Model() {
 		
 	}
+	
+	//getter for eggs
+	public int getEggs() {return this.eggs;};
+	//getter for numofTrueAns
+	public int getNumAns() {return this.numTrueAns;};
+	//getter for quizing
+	public boolean getQuizing() {return this.quizing;};
 	
 	// loop through the collection list update their position by calling the move method
 	// if the curState is NH2 call collisionNH2()

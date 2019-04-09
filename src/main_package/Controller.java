@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.Action;
-
+//author Sicheng Tian
 public class Controller {
 	Model model;
 	View view;

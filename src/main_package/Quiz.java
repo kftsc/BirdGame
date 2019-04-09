@@ -17,7 +17,7 @@ public class Quiz {
 	public void setChosenAnser(String chosenAnswer) {
 		this.chosenAnswer = chosenAnswer;
 	}
-	//check if the chosenAnswer matchs the correct answer
+	//check if the chosenAnswer matches the correct answer
 	public boolean checkAnswer() {
 		return answer.equals(chosenAnswer);
 	}
